@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html >
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<style>
+    .main{
+        width: 400px;
+        height: 430px;
+        margin: 150px auto;
+        border: aliceblue solid 2px;
+    }
+    .main-top{
+        overflow: hidden;
+        width: 400px;
+        height: 190px;
+        background-color: #1f1c4e;
+    }
+    .main-top img{
+        display: block;
+        width: 100px;
+        height: 100px;
+        margin: 20px auto;
+    }
+    .world{
+        font-size: 23px;
+        color: white;
+        text-align: center;
+
+    }
+    .main-body{
+        background-color: #FFFFFF;
+    }
+    .body-tip{
+        margin-top: 20px;
+        font-size: 15px;
+        text-align: center;
+        font-family: 微软雅黑;
+    }
+    .boby-img{
+        margin: 20px auto;
+        width: 133px;
+        height: 112px;
+        opacity: 0.2;
+        cursor: pointer;
+    }
+    .boby-img:hover {
+        opacity: 1;
+    }
+</style>
+<body>
+<div class="main">
+    <div class="main-top">
+        <img src="timg.jpg" alt="">
+        <div class="world">我的网盘</div>
+    </div>
+    <div class="main-body">
+        <div class="body-tip">请选择快捷登录方式</div>
+        <div class="boby-img" onclick="window.open('https://github.com/login/oauth/authorize?client_id=a842ae1d011dfaea41b2&redirect_uri=http://localhost:8087/callback&scope=user&state=1998','_self')">
+            <img class="img-login" src="ss.png" alt="" >
+            <!-- 	<div class="img-tip">github</div> -->
+        </div>
+    </div>
+</div>
+</body>
+</html>
